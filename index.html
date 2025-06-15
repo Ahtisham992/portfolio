@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ahtisham - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Muhammad Ahtisham</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><button class="theme-toggle" id="themeToggle">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <div class="home-content">
+                <div class="intro-text">
+                    <h2>Hello, I am</h2>
+                    <h1>Muhammad Ahtisham</h1>
+                    <h3>Full Stack Web Developer</h3>
+                    <p>BS Software Engineering student at FAST-NUCES Islamabad. Passionate about building innovative
+                        solutions and solving complex problems through code.</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="profile-section">
+                    <div class="profile-card">
+                        <img src="https://ahtisham05-portfolio.netlify.app/assets/images/img.png"
+                            alt="Muhammad Ahtisham" class="profile-img">
+                        <h4>Software Engineer</h4>
+                        <p>Building the future, one line of code at a time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title scroll-reveal">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card scroll-reveal" onclick="openModal('project1')">
+                    <div class="project-icon">🏛️</div>
+                    <h3>University Management System</h3>
+                    <p>A comprehensive MERN Stack application designed to streamline university operations, student
+                        management, and academic processes with modern UI/UX.</p>
+                    <a href="#" class="project-link">Learn More →</a>
+                </div>
+                <div class="project-card scroll-reveal" onclick="openModal('project2')">
+                    <div class="project-icon">♟️</div>
+                    <h3>Interactive Chess Game</h3>
+                    <p>A feature-rich Python chess application with AI opponent, game analysis, and multiplayer
+                        capabilities. Built with object-oriented programming principles.</p>
+                    <a href="#" class="project-link">View Code →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <div id="project1" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('project1')">&times;</button>
+            <h2>University Management System</h2>
+            <div class="project-icon" style="margin: 1rem 0;">🏛️</div>
+            <p><strong>Technology Stack:</strong> MongoDB, Express.js, React.js, Node.js</p>
+            <p><strong>Key Features:</strong></p>
+            <ul style="margin: 1rem 0; padding-left: 2rem;">
+                <li>Student enrollment and course management</li>
+                <li>Faculty dashboard with grade management</li>
+                <li>Real-time notifications and updates</li>
+                <li>Responsive design with modern UI components</li>
+                <li>Secure authentication and authorization</li>
+            </ul>
+            <p><strong>Description:</strong> This comprehensive university management system streamlines academic
+                operations by providing separate dashboards for students, faculty, and administrators. The application
+                features a modern, responsive design and implements best practices for security and user experience.</p>
+            <div style="margin-top: 2rem;">
+                <a href="#" class="btn btn-primary" style="margin-right: 1rem;">Live Demo</a>
+                <a href="#" class="btn btn-secondary">GitHub Repository</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="project2" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('project2')">&times;</button>
+            <h2>Interactive Chess Game</h2>
+            <div class="project-icon" style="margin: 1rem 0;">♟️</div>
+            <p><strong>Technology Stack:</strong> Python, Pygame, Object-Oriented Programming</p>
+            <p><strong>Key Features:</strong></p>
+            <ul style="margin: 1rem 0; padding-left: 2rem;">
+                <li>Full chess rule implementation</li>
+                <li>AI opponent with difficulty levels</li>
+                <li>Move validation and game state tracking</li>
+                <li>Save and load game functionality</li>
+                <li>Clean, intuitive user interface</li>
+            </ul>
+            <p><strong>Description:</strong> An interactive chess game built with Python that demonstrates solid
+                understanding of object-oriented programming, game logic implementation, and user interface design. The
+                game includes an AI opponent and comprehensive chess rules validation.</p>
+            <div style="margin-top: 2rem;">
+                <a href="#" class="btn btn-primary" style="margin-right: 1rem;">Download Game</a>
+                <a href="#" class="btn btn-secondary">View Source Code</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title scroll-reveal">Get In Touch</h2>
+                <p class="scroll-reveal" style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 2rem;">
+                    Have a project in mind or want to collaborate? I'd love to hear from you!
+                </p>
+                <form class="contact-form scroll-reveal" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message"
+                            placeholder="Tell me about your project or just say hello!" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div id="formResponse" class="form-response" style="display: none;"></div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
