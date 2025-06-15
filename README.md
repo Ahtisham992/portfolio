@@ -1,7 +1,8 @@
 # Muhammad Ahtisham - Portfolio Website
 
 A modern, responsive portfolio website showcasing my projects and skills as a Full Stack Web Developer. Built with clean HTML, CSS, and JavaScript with a focus on user experience and modern design principles.
-
+## github link
+https://github.com/Ahtisham992/portfolio
 ## 🌟 Features
 
 ### Core Features
@@ -33,35 +34,10 @@ A modern, responsive portfolio website showcasing my projects and skills as a Fu
 
 ### Method 2: Using a Local Server (Recommended)
 
-#### Option A: Using Live Server (VS Code Extension)
+#### Using Live Server (VS Code Extension)
 ```bash
 # Install Live Server extension in VS Code
 # Right-click on index.html and select "Open with Live Server"
-```
-
-#### Option B: Using Python HTTP Server
-```bash
-# Navigate to project directory
-cd /path/to/portfolio
-
-# Python 3
-python -m http.server 8000
-
-# Python 2
-python -m SimpleHTTPServer 8000
-
-# Open browser to http://localhost:8000
-```
-
-#### Option C: Using Node.js HTTP Server
-```bash
-# Install http-server globally
-npm install -g http-server
-
-# Navigate to project directory and run
-http-server
-
-# Open browser to displayed local address
 ```
 
 ### File Structure
